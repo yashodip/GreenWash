@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>GreenWash</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -133,7 +134,7 @@
                 ]
             });
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "./../include/operations.php?data=mostPayment",
                 dataType: "json",
                 data: {},
@@ -161,7 +162,7 @@
                 }
             });
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "./../include/operations.php?data=mostCities",
                 dataType: "json",
                 data: {},

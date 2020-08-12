@@ -12,6 +12,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GreenWash</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- Bootstrap -->
