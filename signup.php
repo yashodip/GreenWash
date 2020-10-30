@@ -16,12 +16,16 @@ if (session_id() == '') {
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/signup.css" rel="stylesheet">
+    <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/JosefinSans-Light.ttf" as="font" crossorigin>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+        <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
 </head>
 <style>
     @font-face {
@@ -70,15 +74,19 @@ if (session_id() == '') {
                     </div>
                 </div>
                 <div class="col-sm-6 px-0 d-none d-sm-block">
-                    <img src="images/frontpage.jpg" alt="Signup image" class="login-img">
+                    <picture>
+                        <source srcset="images/frontpage.webp" type="image/webp">
+                        <img src="images/frontpage.jpg" alt="Signup image" class="login-img" />
+                    </picture>
+
                 </div>
             </div>
         </div>
     </main>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    	
-	<script src="./js/jquery.validate.min.js"></script>
+
+    <script src="./js/jquery.validate.min.js"></script>
     <!-- <script src="js/signup.js"></script> -->
     <script src="./js/valid_signup.js"></script>
 </body>

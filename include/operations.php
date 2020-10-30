@@ -194,9 +194,10 @@ class Data
             //echo mysqli_stmt_num_rows($stmt);
 
             /* bind result variables */
-            mysqli_stmt_bind_result($stmt, $id,$name, $city, $payment, $phone, $order_status);
+            mysqli_stmt_bind_result($stmt, $id, $name, $city, $payment, $phone, $order_status);
 
             /* fetch values */
+            $data = [];
             while (mysqli_stmt_fetch($stmt)) {
                 $sub_array = array();
 
@@ -204,15 +205,13 @@ class Data
                 $sub_array["city"] = $city;
                 $sub_array["payment"] = $payment;
                 $sub_array["phone"] = $phone;
-                if($order_status === 'placed')
-                {
+                if ($order_status === 'placed') {
                     $sub_array["order_status"] = "<div id='$id'>'<button id = ' $id ' name='confirm_order' class='btn btn-success' value='confirmed' onclick='confirmOrder($id)'> Confirm Order</button></div>";
-                }else
-                {
+                } else {
                     $sub_array["order_status"] = "Confirmed";
                 }
-                
-                $data[] = $sub_array;
+
+                array_push($data, $sub_array);
             }
 
             $response = array(
@@ -246,7 +245,7 @@ class Data
 
             /* fetch values */
             while (mysqli_stmt_fetch($stmt)) {
-              
+
                 $response[$payment] = $payment_count;
             }
             echo json_encode($response);
@@ -290,8 +289,7 @@ class Data
     function confirmOrder()
     {
         include('config.php');
-        if (isset($_POST['id']))
-         {
+        if (isset($_POST['id'])) {
             $id = $_POST['id'];
             $query = "UPDATE `tbl_order` SET `order_status` = 'confirmed' WHERE `tbl_order`.`id` = ?";
             if ($stmt = mysqli_prepare($conn, $query)) {
@@ -311,7 +309,4 @@ class Data
             mysqli_close($conn);
         }
     }
-    
 }
-
-

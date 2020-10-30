@@ -24,7 +24,8 @@ if (session_status() == PHP_SESSION_NONE) {
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-
+    <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/JosefinSans-Light.ttf" as="font" crossorigin>
 </head>
 
 <body>
@@ -108,48 +109,48 @@ if (session_status() == PHP_SESSION_NONE) {
                     <div class="col-md-8 form-group form-inline ">
                         <label class="col-md-4 control-label"></label>
                         <button type="submit" class="btn btn-secondary col-md-4 mx-auto">Place Order</button>
-                    </div>   
-                </form>   
+                    </div>
+                </form>
             </div>
-        </div>   
+        </div>
     </div>
     <section id="main-contact" class="container-fluid">
-        	<div class="row">
-            	<div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 ">
-					<div class="modal fade" id="contact" role="dialog">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 ">
+                <div class="modal fade" id="contact" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
                                 <h2 class="modal-title">Contact Us</h2>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									
-								</div>
-								<div class="modal-body">
-									<form role="form" action="" method="post" id="contact-form" name="contact">
-										<div class="form-group">
-											<label for="name">Full Name</label>
-											<input type="text" class="form-control" id="name" name="name">
-										</div>
-										<div class="form-group">
-											<label for="email">Email address:</label>
-											<input type="email" class="form-control" id="email" name="email">
-										</div>
-										<div class="form-group">
-											<label for="message">Message:</label>
-											<textarea rows="3" class="form-control" id="message" name="message"></textarea>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											<input type="submit" name="submit_contact" id="submit-button" class="btn btn-default btn-primary"/>
-										</div>
-									</form> 
-								</div>
-								
-							</div>
-						</div>
-					</div>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" action="" method="post" id="contact-form" name="contact">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea rows="3" class="form-control" id="message" name="message"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <input type="submit" name="submit_contact" id="submit-button" class="btn btn-default btn-primary" />
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>

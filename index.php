@@ -14,6 +14,8 @@ if (session_status() == PHP_SESSION_NONE) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GreenWash</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/JosefinSans-Light.ttf" as="font" crossorigin>
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,6 @@ if (session_status() == PHP_SESSION_NONE) {
 		<![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-
 
 </head>
 
@@ -105,9 +106,10 @@ if (session_status() == PHP_SESSION_NONE) {
 	</div>
 	<div class="slider-div">
 		<div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-speed=1000 data-cycle-timeout=2000 data-cycle-manual-fx="tileSlide" data-cycle-manual-speed="1000" data-cycle-auto-height="container">
-			<img src="images/Untitled-1.png" alt="student study">
-			<img src="images/reclaim-evenings-weekends-from-ironing-order.png" alt="student study">
-			<img src="images/pro-ironing1.png" alt="student study">
+			<img src="images/Untitled-1.png">
+			<img src="images/reclaim-evenings-weekends-from-ironing-order.png">
+			<img src="images/pro-ironing1.png">
+
 		</div>
 	</div>
 
@@ -164,11 +166,11 @@ if (session_status() == PHP_SESSION_NONE) {
 				<h2 class="fnt-sz-lg fnt-wt-lg text-center">Why us?</h2>
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 mx-auto">
-						
-							<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Best Services at affordable prize</small></h4>
-							<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Best cleaning staff</small></h4>
-							<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Timely pick up and delivery</small></h4>
-						
+
+						<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Best Services at affordable prize</small></h4>
+						<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Best cleaning staff</small></h4>
+						<h4><i class="fa fa-angle-double-right fa-sm" aria-hidden="true"> </i>&nbsp;&nbsp;&nbsp;<small> Timely pick up and delivery</small></h4>
+
 					</div>
 
 				</div>

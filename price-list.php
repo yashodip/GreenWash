@@ -18,7 +18,8 @@ if (session_status() == PHP_SESSION_NONE) {
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
-
+	<link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/JosefinSans-Light.ttf" as="font" crossorigin>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -62,7 +63,7 @@ if (session_status() == PHP_SESSION_NONE) {
 						<a class="nav-link active text-dark " href="#wash-and-iron" data-toggle="tooltip" data-placement="bottom" title="Click to see Cost of  wash and Iron">Wash-and-Iron</a>
 					</li>
 					<li class="nav-item" id="i">
-						<a class="nav-link text-dark"  href="#ironing" data-toggle="tooltip" data-placement="bottom" title="Click to see cost of only Ironing">Ironing</a>
+						<a class="nav-link text-dark" href="#ironing" data-toggle="tooltip" data-placement="bottom" title="Click to see cost of only Ironing">Ironing</a>
 					</li>
 					<li class="nav-item" id="d">
 						<a class="nav-link text-dark" href="#dry-cleaning" data-toggle="tooltip" data-placement="bottom" title="Click to see cost of Dry-cleaning">Dry-cleaning</a>
@@ -790,46 +791,46 @@ if (session_status() == PHP_SESSION_NONE) {
 			</div>
 		</section>
 	</div>
-	
+
 	<section id="main-contact" class="container-fluid">
-        	<div class="row">
-            	<div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 ">
-					<div class="modal fade" id="contact" role="dialog">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 ">
+				<div class="modal fade" id="contact" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
 								<h2 class="modal-title">Contact Us</h2>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									
-								</div>
-								<div class="modal-body">
-									<form role="form" action=""  method="post" id="contact-form" name="contact">
-										<div class="form-group">
-											<label for="name">Full Name</label>
-											<input type="text" class="form-control" id="name" name="name">
-										</div>
-										<div class="form-group">
-											<label for="email">Email address:</label>
-											<input type="email" class="form-control" id="email" name="email">
-										</div>
-										<div class="form-group">
-											<label for="message">Message:</label>
-											<textarea rows="3" class="form-control" id="message" name="message"></textarea>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									
-											<input type="submit" name="submit_contact" id="submit-button" class="btn btn-default btn-primary"/>
-										</div>
-									</form> 
-								</div>
-								
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+
 							</div>
+							<div class="modal-body">
+								<form role="form" action="" method="post" id="contact-form" name="contact">
+									<div class="form-group">
+										<label for="name">Full Name</label>
+										<input type="text" class="form-control" id="name" name="name">
+									</div>
+									<div class="form-group">
+										<label for="email">Email address:</label>
+										<input type="email" class="form-control" id="email" name="email">
+									</div>
+									<div class="form-group">
+										<label for="message">Message:</label>
+										<textarea rows="3" class="form-control" id="message" name="message"></textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+										<input type="submit" name="submit_contact" id="submit-button" class="btn btn-default btn-primary" />
+									</div>
+								</form>
+							</div>
+
 						</div>
 					</div>
-                </div>
-            </div>
-    </section>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer class=" navbar navbar-default navbar-inverse mar-bottom">
 		<div class="container-fluid ">
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -847,10 +848,10 @@ if (session_status() == PHP_SESSION_NONE) {
 	</footer>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main_1.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/valid_contact.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/main_1.js"></script>
+	<script src="./js/jquery.validate.min.js"></script>
+	<script src="./js/valid_contact.js"></script>
 	<script src="./js/logout.js"></script>
 	<script>
 		$(document).ready(function() {

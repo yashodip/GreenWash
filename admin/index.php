@@ -18,7 +18,9 @@
     <link rel="stylesheet" type="text/css" href="./../css/main.css">
     <link rel="stylesheet" type="text/css" href="./../css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="./../css/all.min.css">
-
+    <link rel="preload" href="../webfonts/fa-solid-900.woff2" as="font" crossorigin>
+    <link rel="preload" href="../fonts/JosefinSans-Light.ttf" as="font" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
 </head>
 
 <body>
